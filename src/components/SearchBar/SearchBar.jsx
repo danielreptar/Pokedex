@@ -24,7 +24,7 @@ export const SearchBar = () => {
     if (!search) {
       return;
     }
-    const path = `/pokemon/${search}`;
+    const path = `/pokemon/${search.toLowerCase()}`;
     history.push(path);
     handleChange("");
   };

@@ -11,7 +11,7 @@ const PokemonCards = () => {
     return pokemons.filter((pokemon) =>
       Boolean(
         String(pokemon.id).includes(search) ||
-          Boolean(pokemon.name.includes(search))
+          Boolean(pokemon.name.includes(search.toLowerCase()))
       )
     );
   };
